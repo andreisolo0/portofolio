@@ -17,10 +17,15 @@ const MainBody = React.forwardRef(
       >
         <div id="stars"></div>
         <Container className="text-center">
+          <Typist className="lead typist" cursor={{ show: false }}>
+            {" "}
+            {"Hello, my name is "}
+          </Typist>
           <h1 ref={ref} className="display-1">
             {title}
           </h1>
           <Typist className="lead typist" cursor={{ show: false }}>
+            <Typist.Delay ms={2500} />
             {" "}
             {message}
           </Typist>
