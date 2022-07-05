@@ -6,30 +6,18 @@ const navBar = {
 // Main Body SECTION
 const mainBody = {
   gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
-  firstName: "Hashir",
+  firstName: "Andrei",
   middleName: "",
-  lastName: "Shoaib",
-  message: " Passionate about changing the world with technology. ",
+  lastName: "Solomon",
+  message: " Eager to try new stuff everyday :) ",
   icons: [
     {
       image: "fa-github",
-      url: "https://github.com/hashirshoaeb",
-    },
-    {
-      image: "fa-facebook",
-      url: "https://www.facebook.com/hashirshoaeb",
-    },
-    {
-      image: "fa-instagram",
-      url: "https://www.instagram.com/hashirshoaeb/",
+      url: "https://github.com/andreisolo0",
     },
     {
       image: "fa-linkedin",
-      url: "https://www.linkedin.com/in/hashirshoaeb/",
-    },
-    {
-      image: "fa-twitter",
-      url: "https://www.twitter.com/hashirshoaeb/",
+      url: "https://www.linkedin.com/in/andrei-solomon-b42671165",
     },
   ],
 };
@@ -51,11 +39,11 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/hashirshoaeb.png"),
+  imageLink: require("../editable-stuff/asolomon.jpg"),
   imageSize: 375,
   message:
-    "My name is Hashir Shoaib. I’m a graduate of 2020 from National University of Sciences and Technology at Islamabad with a degree in Computer Engineering. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on open source projects.",
-  resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+    "My name is Andrei Solomon. I graduated in 2020 my bachelor's degree  and in 2022 the master's degree at Politehnica University of Bucharest. I'm constantly learning and trying new apps, programming languages and tools. In my free time I like to code, my first ever experience with this being in a web application developed for the master's degree in Ruby on Rails, I also like video games and a really big fan of Netflix, I am also very interested in automating almost everything to make my life easy :)",
+  resume: "",
 };
 
 // PROJECTS SECTION
@@ -65,8 +53,8 @@ const about = {
 //      i.e ["repository-1", "repo-2"]
 const repos = {
   show: true,
-  heading: "Recent Projects",
-  gitHubUsername: "hashirshoaeb", //i.e."johnDoe12Gh"
+  heading: "Projects",
+  gitHubUsername: "andreisolo0", //i.e."johnDoe12Gh"
   reposLength: 4,
   specificRepos: [],
 };
@@ -100,22 +88,22 @@ const skills = {
   show: true,
   heading: "Skills",
   hardSkills: [
-    { name: "Python", value: 90 },
-    { name: "SQL", value: 75 },
-    { name: "Data Structures", value: 85 },
-    { name: "C/C++", value: 65 },
-    { name: "JavaScript", value: 90 },
-    { name: "React", value: 65 },
-    { name: "HTML/CSS", value: 55 },
-    { name: "C#", value: 80 },
+    { name: "Ruby", value: 70 },
+    { name: "SQL", value: 70 },
+    { name: "Automation tools(Puppet/Ansible)", value: 85 },
+    { name: "System Admin", value: 75 },
+    { name: "Monitoring", value: 90 },
+    { name: "Scripting", value: 85 },
+    { name: "Containers", value: 75 },
+    { name: "Software Architecture", value: 65 },
   ],
   softSkills: [
-    { name: "Goal-Oriented", value: 80 },
+    { name: "Goal-Oriented", value: 75 },
     { name: "Collaboration", value: 90 },
-    { name: "Positivity", value: 75 },
-    { name: "Adaptability", value: 85 },
-    { name: "Problem Solving", value: 75 },
-    { name: "Empathy", value: 90 },
+    { name: "Positivity", value: 90 },
+    { name: "Adaptability", value: 80 },
+    { name: "Problem Solving", value: 85 },
+    { name: "Time management", value: 70 },
     { name: "Organization", value: 70 },
     { name: "Creativity", value: 90 },
   ],
@@ -126,25 +114,47 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
-  email: "hashirshoaeb@gmail.com",
+    "Learning everyday and happy to help in any way I can. Feel free to contact me at any time via email or Linkedin :)",
+  email: "solomonandrei2605@gmail.com",
 };
 
 const experiences = {
-  show: false,
-  heading: "Experiences",
+  show: true,
+  job: "Experience",
   data: [
     {
-      role: 'Software Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/dell.png'),
-      date: 'June 2018 – Present',
+      role: 'Infrastructure Engineer - Automation Team',// Here Add Company Name
+      companylogo: require('../assets/img/bd-small.jpg'),
+      skills: "- Puppet - Ansible - Containers - GCP - AWS - Zabbix - Ruby - ",
+      skills2: "- System Admin - Scripting - API integration - ",
+      date: 'August 2021 – Present',
     },
     {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
+      role: 'Level 1 System Support Engineer',
+      companylogo: require('../assets/img/rs.jpg'),
+      skills: "- Networking - Ansible - VoIP - Zabbix - Bash Scripting- ",
+      date: 'June 2018 – August 2021',
     },
-  ]
+  ],
+  study: "Study",
+  data_study: [ // Here Add Study Experience 
+    { unversity: "Politehnica University of Bucharest",
+      section: "Electronics, Telecommunications and Information Technology",
+      degree: "Master's Degree",
+      date: "September 2020 - June 2022",
+      schoollogo: require('../assets/img/upb.png'),
+      schoollogo2: require('../assets/img/eti.png'),
+    },
+    { unversity: "Politehnica University of Bucharest",
+      section: "Electronics, Telecommunications and Information Technology",
+      degree: "Bachelor's Degree",
+      date: "September 2016 - June 2020",
+      schoollogo: require('../assets/img/upb.png'),
+      schoollogo2: require('../assets/img/eti.png'),
+    }
+],
+  
+
 }
 
 // Blog SECTION
