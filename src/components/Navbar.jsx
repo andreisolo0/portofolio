@@ -4,7 +4,7 @@ import { useScrollPosition } from "../hooks/useScrollPosition";
 import useResizeObserver from "../hooks/useResizeObserver";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { mainBody, repos, about, skills } from "../editable-stuff/config.js";
+import { mainBody, repos, about, skills, experiences } from "../editable-stuff/config.js";
 
 const Navigation = React.forwardRef((props, ref) => {
   // const { showBlog, FirstName } = config;
@@ -39,7 +39,9 @@ const Navigation = React.forwardRef((props, ref) => {
       }`}
       expand="lg"
     >
-      <Navbar.Brand className="brand" href={process.env.PUBLIC_URL + "/#home"}>
+      <Navbar.Brand className={`nav-link lead ${
+              !isTop ? "navbar-white" : "navbar-transparent"
+            }`} href={process.env.PUBLIC_URL + "/#home"}>
         {`<${mainBody.firstName} />`}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
@@ -50,15 +52,19 @@ const Navigation = React.forwardRef((props, ref) => {
               <Link to={process.env.PUBLIC_URL + "/blog"}>Blog</Link>
             </Nav.Link>
           } */}
-          {repos.show && (
+
+          {about.show && (
             <Nav.Link
-              className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/#projects"}
+              className={`nav-link lead ${
+                !isTop ? "navbar-white" : "navbar-transparent"
+              }`}
+              href={process.env.PUBLIC_URL + "/#aboutme"}
             >
-              Projects
+              About
             </Nav.Link>
           )}
-          <Nav.Link
+
+         {/* <Nav.Link
             className="nav-link lead"
             href={about.resume}
             target="_blank"
@@ -66,17 +72,24 @@ const Navigation = React.forwardRef((props, ref) => {
           >
             Resume
           </Nav.Link>
-          {about.show && (
+          */}
+          {repos.show && (
             <Nav.Link
-              className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/#aboutme"}
+            className={`nav-link lead ${
+              !isTop ? "navbar-white" : "navbar-transparent"
+            }`}
+              href={process.env.PUBLIC_URL + "/#projects"}
             >
-              About
+              Projects
             </Nav.Link>
           )}
+          
+          
           {skills.show && (
             <Nav.Link
-              className="nav-link lead"
+            className={`nav-link lead ${
+              !isTop ? "navbar-white" : "navbar-transparent"
+            }`}
               href={process.env.PUBLIC_URL + "/#skills"}
             >
               Skills
