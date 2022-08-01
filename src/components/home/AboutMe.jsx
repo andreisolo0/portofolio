@@ -3,6 +3,7 @@ import Pdf from "../../editable-stuff/resume.pdf";
 
 import axios from "axios";
 
+
 const pictureLinkRegex = new RegExp(
   /[(http(s)?):(www.)?a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)/
 );
@@ -65,6 +66,8 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
               </p>
             )}
           </div>
+          <hr/>
+          
         </div>
       </div>
     </div>

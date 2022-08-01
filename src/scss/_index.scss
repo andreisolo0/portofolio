@@ -131,3 +131,15 @@ code {
     animation: progress 1.5s ease-in-out forwards;
   }
 }
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  padding-top: 3%;
+}
+
+.small-img {
+  width: 30%;
+  height: auto;
+}

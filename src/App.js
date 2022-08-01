@@ -4,6 +4,7 @@ import {
   navBar,
   mainBody,
   about,
+  interest,
   repos,
   leadership,
   skills,
@@ -42,6 +43,8 @@ const Home = React.forwardRef((props, ref) => {
           resume={about.resume}
         />
       )}
+     
+      
       {
         experiences.show && (
           <Experience 

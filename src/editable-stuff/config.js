@@ -55,8 +55,8 @@ const repos = {
   show: true,
   heading: "Projects",
   gitHubUsername: "andreisolo0", //i.e."johnDoe12Gh"
-  reposLength: 4,
-  specificRepos: [],
+  reposLength: 0,
+  specificRepos: ["Overwatch","sensor_scripts"],
 };
 
 // Leadership SECTION
@@ -67,12 +67,12 @@ const leadership = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
   images: [
     { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
+      
       label: "First slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
     { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
+      
       label: "Second slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
@@ -112,9 +112,9 @@ const skills = {
 // GET IN TOUCH SECTION
 const getInTouch = {
   show: true,
-  heading: "Get In Touch",
+  heading: "Let's get in touch",
   message:
-    "Learning everyday and happy to help in any way I can. Feel free to contact me at any time via email or Linkedin :)",
+    "Learning everyday and happy to help in any way I can. Feel free to contact me at any time via email or LinkedIn :)",
   email: "solomonandrei2605@gmail.com",
 };
 
@@ -153,6 +153,42 @@ const experiences = {
       schoollogo2: require('../assets/img/eti.png'),
     }
 ],
+  interests:"My interests",
+  data_interests:[
+    {
+      name: "Video Games",
+      logo: require('../assets/img/videogame.png'),
+    },
+    {
+      name: "Arduino Projects",
+      logo: require('../assets/img/arduino.png'),
+    },
+    {
+      name: "RaspberryPi Projects",
+      logo: require('../assets/img/raspberrypi.jpg'),
+    },
+    {
+      name: "Movies and Series",
+      logo: require('../assets/img/movies.png'),
+    },
+    {
+      name: "Coding",
+      logo: require('../assets/img/code.jpg'),
+    },
+    {
+      name: "Gym",
+      logo: require('../assets/img/gym_big.jpg'),
+    },
+    {
+      name: "Board Games",
+      logo: require('../assets/img/boardgames.png'),
+    },
+    {
+      name: "Cooking",
+      logo: require('../assets/img/cooking.jpg'),
+    }
+
+  ]
   
 
 }
